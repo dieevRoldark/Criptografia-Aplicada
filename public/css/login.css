@@ -85,7 +85,7 @@ div, input,header,button,body,a{
 }
 
     p{
-    font-size: 17px;
+    font-size: 15px;
     color: var(--text-secondary);
     }
 }

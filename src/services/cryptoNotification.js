@@ -6,7 +6,7 @@ export function mostrarNotificacionCriptografica({ titulo, descripcion, campos }
     const encabezado = document.createElement('header')
     const tituloElemento = document.createElement('h3')
     const cerrarBoton = document.createElement('button')
-    const descripcionElemento = document.createElement('p')
+//  const descripcionElemento = document.createElement('p')
     const lista = document.createElement('dl')
 
     overlay.className = 'crypto-modal'
@@ -24,8 +24,8 @@ export function mostrarNotificacionCriptografica({ titulo, descripcion, campos }
     cerrarBoton.textContent = 'Cerrar'
     cerrarBoton.addEventListener('click', cerrarNotificacionExistente)
 
-    descripcionElemento.className = 'crypto-modal__description'
-    descripcionElemento.textContent = descripcion
+    // descripcionElemento.className = 'crypto-modal__description'
+    // descripcionElemento.textContent = descripcion
     lista.className = 'crypto-modal__list'
 
     campos.forEach(({ etiqueta, valor }) => {
@@ -38,7 +38,7 @@ export function mostrarNotificacionCriptografica({ titulo, descripcion, campos }
     })
 
     encabezado.append(tituloElemento, cerrarBoton)
-    dialogo.append(encabezado, descripcionElemento, lista)
+    dialogo.append(encabezado, lista)
     overlay.append(dialogo)
     overlay.addEventListener('click', (event) => {
         if (event.target === overlay) {
