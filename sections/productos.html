@@ -1,0 +1,75 @@
+                <section class="main__productos-wrapper" aria-labelledby="productos-titulo" aria-describedby="productos-descripcion">
+
+                    <header class="main__header-all">
+                        <div class="main__header-desc">
+                            <h2 id="productos-titulo">Productos</h2>
+                            <p id="productos-descripcion">Puedes gestionar tus productos desde el siguiente panel.</p>
+                        </div>
+
+                        <div class="main__button-cont">                           
+                            <button id="btn-nuevo-producto" class="main__button-all" type="button" aria-label="Crear un nuevo producto">Nuevo producto</button>
+                        </div>
+                    </header>
+
+                    <section id="producto-form-wrapper" class="product__form-wrapper" aria-labelledby="producto-form-titulo" hidden>
+                        <h3 id="producto-form-titulo">Nuevo producto</h3>
+
+                        <form id="producto-form" class="product__form" novalidate>
+                            <input id="producto-id" name="id" type="hidden">
+
+                            <div class="product__field">
+                                <label for="producto-codigo">Codigo</label>
+                                <input id="producto-codigo" name="codigo" type="text" placeholder="Ej: 7701234567890" autocomplete="off" required>
+                            </div>
+
+                            <div class="product__field">
+                                <label for="producto-nombre">Nombre</label>
+                                <input id="producto-nombre" name="nombre" type="text" placeholder="Nombre del producto" autocomplete="off" required>
+                            </div>
+
+                            <div class="product__field">
+                                <label for="producto-precio-compra">Precio de compra</label>
+                                <input id="producto-precio-compra" name="precioCompra" type="number" placeholder="0" min="0" step="0.01" inputmode="decimal" required>
+                            </div>
+
+                            <div class="product__field">
+                                <label for="producto-iva">IVA (%)</label>
+                                <input id="producto-iva" name="iva" type="number" placeholder="19" min="0" step="0.01" inputmode="decimal" required>
+                            </div>
+
+                            <div class="product__field">
+                                <label for="producto-precio-final">Precio final de venta</label>
+                                <input id="producto-precio-final" name="precioFinalVenta" type="number" placeholder="0" min="0" step="0.01" inputmode="decimal" required>
+                            </div>
+
+                            <div class="product__form-actions">
+                                <button id="btn-guardar-producto" class="main__button-all" type="submit">Guardar producto</button>
+                                <button id="btn-cancelar-producto" class="product__button-secondary" type="button">Cancelar</button>
+                            </div>
+                        </form>
+
+                    </section>
+
+                    <p id="producto-form-mensaje" class="product__message" role="status" aria-live="polite"></p>
+
+                    <footer>
+                        <div class="footer__table-cont">
+                            <table id="tabla-productos" class="footer__table" aria-describedby="productos-descripcion">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" >Codigo</th>
+                                        <th scope="col" >Nombre</th>
+                                        <th scope="col">Precio compra</th>
+                                        <th scope="col" >Iva</th>
+                                        <th scope="col">Precio final venta</th>
+                                        <th scope="col">Editar</th>
+                                        <th scope="col">Borrar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </footer>
+                </section>

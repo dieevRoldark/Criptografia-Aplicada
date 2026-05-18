@@ -1,0 +1,66 @@
+                <div class="setting__container-wrapper">
+                    <section class="setting__section" aria-labelledby="configuracion-reportes">    
+                        <h4 id="configuracion-reportes">Configuración de reportes</h4>                    
+                        <section class="setting__section-facts">
+                            <div>
+                                <details class="fact-content">
+                                    <summary>Personalización de reportes</summary>
+                                    <p id="descripcion-personalizacion-reportes">Elige qué información deseas incluir en tus reportes (ventas, compras, inventario, etc.).</p>
+                                    <div role="group" aria-labelledby="descripcion-personalizacion-reportes">
+                                        <label><input type="checkbox" name="tipo-reporte" value="ventas" checked> Ventas</label>
+                                        <label><input type="checkbox" name="tipo-reporte" value="compras" checked> Compras</label>
+                                        <label><input type="checkbox" name="tipo-reporte" value="inventario" checked> Inventario</label>
+                                        <label><input type="checkbox" name="tipo-reporte" value="clientes"> Clientes</label>
+                                        <label><input type="checkbox" name="tipo-reporte" value="proveedores"> Proveedores</label>
+                                    </div>
+                                </details>
+                            </div>
+                            
+                            <div>
+                                <details class="fact-content">
+                                    <summary>Frecuencia de reportes</summary>
+                                    <p id="descripcion-frecuencia-reportes">Configura la frecuencia con la que deseas recibir los reportes (diaria, semanal, mensual).</p>
+                                    <div role="radiogroup" aria-labelledby="descripcion-frecuencia-reportes">
+                                        <label><input type="radio" name="frecuencia" value="diario" checked> Diario</label>
+                                        <label><input type="radio" name="frecuencia" value="semanal"> Semanal</label>
+                                        <label><input type="radio" name="frecuencia" value="mensual"> Mensual</label>
+                                    </div>
+                                </details>
+                            </div>
+                            <div>
+                                <details class="fact-content">
+                                    <summary>Formato de reportes</summary>
+                                    <p id="descripcion-formato-reportes">Selecciona el formato preferido para la exportación de reportes (PDF, Excel, CSV).</p>
+                                    <label for="formato-reportes">Formato de reportes</label>
+                                    <select id="formato-reportes" name="formato-reportes" aria-describedby="descripcion-formato-reportes">
+                                        <option value="pdf">PDF</option>
+                                        <option value="excel">Excel</option>
+                                        <option value="csv">CSV</option>
+                                    </select>
+                                </details>
+                            </div>
+
+                            <details class="fact-content">
+                                <summary>Frecuencia Notificaciones</summary>
+                                <p id="descripcion-frecuencia-notificaciones">Selecciona la frecuencia con la que deseas recibir los reportes.</p>
+                                <label for="frecuencia-notificaciones">Frecuencia de notificaciones</label>
+                                <select id="frecuencia-notificaciones" name="frecuencia-notificaciones" aria-describedby="descripcion-frecuencia-notificaciones">
+                                    <option value="diario">Diario</option>
+                                    <option value="semanal">Semanal</option>
+                                    <option value="mensual">Mensual</option>
+                                </select>
+                            </details>
+
+                            <details  class="fact-content">
+                                <summary>Canales de Notificación</summary>
+                                <p id="descripcion-canales-notificacion">Elige los canales a través de los cuales deseas recibir las notificaciones (correo electrónico, SMS, notificaciones push).</p>
+                                <div role="group" aria-labelledby="descripcion-canales-notificacion">
+                                    <label><input type="checkbox" name="canal-notificacion" value="correo" checked> Correo electrónico</label>
+                                    <label><input type="checkbox" name="canal-notificacion" value="sms"> SMS</label>
+                                    <label><input type="checkbox" name="canal-notificacion" value="push"> Notificaciones push</label>
+                                </div>
+                            </details>
+                            
+                        </section>                        
+                    </section>
+                </div>

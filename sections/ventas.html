@@ -1,0 +1,153 @@
+                <div>
+                    <header class="main__header-all">
+
+                            <div class="main__header-desc">
+                                <h2>Ventas</h2>
+                                <p>Puedes gestionar tus ventas desde el sigueinte panel</p>
+                            </div>
+
+                            <div class="main__button-cont" role="group" aria-label="Acciones de ventas">
+                                <button class="main__button-all" style="background-color: rgb(34, 167, 63);" type="button" aria-pressed="true">Pendientes</button>
+                                <button class="main__button-all" type="button">Nueva venta</button>
+                            </div>
+                    </header>
+
+                    <div class="main__sales-wrapper">
+                        <section class="sales__form-wrapper" aria-label="Formulario para registrar productos de venta">
+                            <form class="sales__form">
+                                <div>
+                                    <label for="barcode">Código de barras</label>
+                                    <input id="barcode" name="barcode" type="text" placeholder="Escanea el código de barras" inputmode="numeric" autocomplete="off">
+                                </div>
+                                <div>
+                                    <label for="product-name">Producto</label>
+                                    <input id="product-name" name="productName" type="text" placeholder="Nombre del producto" autocomplete="off">
+                                </div>
+                                <div>
+                                    <label for="quantity">Cantidad</label>
+                                    <input id="quantity" name="quantity" type="number" placeholder="0" min="1" step="1" inputmode="numeric">
+                                </div>
+                                <div>
+                                    <label for="unit-price">Precio unitario</label>
+                                    <input id="unit-price" name="unitPrice" type="text" placeholder="$0.00" inputmode="decimal" aria-label="Precio unitario en formato decimal">
+                                </div>
+                                <div>
+                                    <button class="main__button-all" type="submit">Agregar Producto</button>
+                                </div>
+                                
+                            </form>
+                        </section>
+
+                        <footer class="footer__table-cont2">
+                            <table class="footer__table2" aria-label="Listado de productos agregados a la venta">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" >Codigo</th>
+                                        <th scope="col" >Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col" >Iva</th>
+                                        <th scope="col">Precio + iva</th>
+                                        <th scope="col">Editar</th>
+                                        <th scope="col">Borrar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Codigo">001</td>
+                                        <td data-label="Nombre">Arroz roa x 500gr</td>
+                                        <td data-label="Precio">$20.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$23.20</td>
+                                        <td data-label="icon"><button type="button" aria-label="Editar producto Arroz roa x 500gr">✏️</button></td>
+                                        <td data-label="icon"><button type="button" aria-label="Eliminar producto Arroz roa x 500gr">🗑️</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Codigo">002</td>
+                                        <td data-label="Nombre">Frijol lima superoriente x 500</td>
+                                        <td data-label="Precio">$30.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$34.80</td>
+                                        <td data-label="icon"><button type="button" aria-label="Editar producto Frijol lima superoriente x 500">✏️</button></td>
+                                        <td data-label="icon"><button type="button" aria-label="Eliminar producto Frijol lima superoriente x 500">🗑️</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Codigo">001</td>
+                                        <td data-label="Nombre">Arroz roa x 500gr</td>
+                                        <td data-label="Precio">$20.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$23.20</td>
+                                        <td data-label="icon"><button type="button" aria-label="Editar producto Arroz roa x 500gr">✏️</button></td>
+                                        <td data-label="icon"><button type="button" aria-label="Eliminar producto Arroz roa x 500gr">🗑️</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Codigo">003</td>
+                                        <td data-label="Nombre">Aceite superoriente x200ml</td>
+                                        <td data-label="Precio">$50.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$58.00</td>
+                                        <td data-label="icon"><button type="button" aria-label="Editar producto Aceite superoriente x200ml">✏️</button></td>
+                                        <td data-label="icon"><button type="button" aria-label="Eliminar producto Aceite superoriente x200ml">🗑️</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Codigo">004</td>
+                                        <td data-label="Nombre">Azucar riopaila x 500 gr</td>
+                                        <td data-label="Precio">$25.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$29.00</td>
+                                        <td data-label="icon"><button type="button" aria-label="Editar producto Azucar riopaila x 500 gr">✏️</button></td>
+                                        <td data-label="icon"><button type="button" aria-label="Eliminar producto Azucar riopaila x 500 gr">🗑️</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Codigo">001</td>
+                                        <td data-label="Nombre">Arroz roa x 500gr</td>
+                                        <td data-label="Precio">$20.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$23.20</td>
+                                        <td data-label="icon"><button type="button" aria-label="Editar producto Arroz roa x 500gr">✏️</button></td>
+                                        <td data-label="icon"><button type="button" aria-label="Eliminar producto Arroz roa x 500gr">🗑️</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Codigo">005</td>
+                                        <td data-label="Nombre">Chocolate Chocoline x 200</td>
+                                        <td data-label="Precio">$25.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$29.00</td>
+                                        <td data-label="icon"><button type="button" aria-label="Editar producto Chocolate Chocoline x 200">✏️</button></td>
+                                        <td data-label="icon"><button type="button" aria-label="Eliminar producto Chocolate Chocoline x 200">🗑️</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Codigo">001</td>
+                                        <td data-label="Nombre">Arroz roa x 500gr</td>
+                                        <td data-label="Precio">$20.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$23.20</td>
+                                        <td data-label="icon"><button type="button" aria-label="Editar producto Arroz roa x 500gr">✏️</button></td>
+                                        <td data-label="icon"><button type="button" aria-label="Eliminar producto Arroz roa x 500gr">🗑️</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Codigo">006</td>
+                                        <td data-label="Nombre">Salsa de tomate Bary x200 gr</td>
+                                        <td data-label="Precio">$25.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$29.00</td>
+                                        <td data-label="icon"><button type="button" aria-label="Editar producto Salsa de tomate Bary x200 gr">✏️</button></td>
+                                        <td data-label="icon"><button type="button" aria-label="Eliminar producto Salsa de tomate Bary x200 gr">🗑️</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Codigo">007</td>
+                                        <td data-label="Nombre">Leche monteFrio x380gr</td>
+                                        <td data-label="Precio">$25.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$29.00</td>
+                                        <td data-label="icon"><button type="button" aria-label="Editar producto Leche monteFrio x380gr">✏️</button></td>
+                                        <td data-label="icon"><button type="button" aria-label="Eliminar producto Leche monteFrio x380gr">🗑️</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </footer>
+                    </div>
+                </div>

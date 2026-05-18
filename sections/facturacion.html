@@ -1,0 +1,143 @@
+                <div>
+                    <h1 style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Facturación</h1>
+                    <div>
+                        <header class="main__header-all">
+
+                            <div class="main__header-desc">
+                                <h2 data-focus-start>Facturación</h2>
+                                <p>Puedes gestionar tus facturas desde el sigueinte panel</p>
+                            </div>
+
+                            <div class="main__button-cont">
+                                <button class="main__button-all" style="background-color: rgb(34, 167, 63);" type="submit">Pendientes</button>                          
+                                <button class="main__button-all" type="submit">Nueva factura</button>
+                                
+                            </div>
+                        </header>
+
+                        <section class="fact__info-wraper">
+                            <form class="fact__form">
+                                <div>
+                                    <label for="fact-nit">Nit</label>
+                                    <input id="fact-nit" name="nit" type="number" >
+                                </div>
+                                <div>
+                                    <label for="fact-numero-factura">Nº Factura</label>
+                                    <input id="fact-numero-factura" name="numero_factura" type="text">
+                                </div>
+                                <div>
+                                    <label for="fact-iva">Iva</label>
+                                    <input id="fact-iva" name="iva" style="border: none;" type="number" placeholder="19%">
+                                </div>
+                                <div>
+                                    <label for="fact-costo">Costo</label>
+                                    <input id="fact-costo" name="costo" type="number" placeholder="0">
+                                </div>
+                                
+                                <div>
+                                    <label for="fact-cantidad">Cantidad</label>
+                                    <input id="fact-cantidad" name="cantidad" type="text" placeholder="$0.00">
+                                </div>
+                                <div>
+                                   <button class="main__button-all" type="submit">Agregar Producto</button>
+                                </div>                                
+                            </form>
+                        </section>
+                    </div>
+
+                    <div>
+                        <footer class="footer__table-cont2">
+                            <table class="footer__table2">                               
+                                <thead>
+                                    <tr>
+                                        <th scope="col" >Codigo</th>
+                                        <th scope="col" >Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col" >Iva</th>
+                                        <th scope="col">Precio + iva</th>
+                                        <th scope="col">Editar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Codigo">001</td>
+                                        <td data-label="Nombre">Arroz roa x 500gr</td>
+                                        <td data-label="Precio">$20.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$23.20</td>
+                                        <td data-label="icon"><button>🗑️</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Codigo">002</td>
+                                        <td data-label="Nombre">Frijol lima superoriente x 500</td>
+                                        <td data-label="Precio">$30.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$34.80</td>
+                                        <td data-label="icon"><button>🗑️</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Codigo">003</td>
+                                        <td data-label="Nombre">Aceite superoriente x200ml</td>
+                                        <td data-label="Precio">$50.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$58.00</td>
+                                        <td data-label="icon"><button>🗑️</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Codigo">004</td>
+                                        <td data-label="Nombre">Azucar riopaila x 500 gr</td>
+                                        <td data-label="Precio">$25.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$29.00</td>
+                                        <td data-label="icon"><button>🗑️</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Codigo">005</td>
+                                        <td data-label="Nombre">Chocolate Chocoline x 200</td>
+                                        <td data-label="Precio">$25.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$29.00</td>
+                                        <td data-label="icon"><button>🗑️</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Codigo">006</td>
+                                        <td data-label="Nombre">Salsa de tomate Bary x200 gr</td>
+                                        <td data-label="Precio">$25.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$29.00</td>
+                                        <td data-label="icon"><button>🗑️</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Codigo">007</td>
+                                        <td data-label="Nombre">Leche monteFrio x380gr</td>
+                                        <td data-label="Precio">$25.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$29.00</td>
+                                        <td data-label="icon"><button>🗑️</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Codigo">008</td>
+                                        <td data-label="Nombre">Desodorante Rexona x 60 ml</td>
+                                        <td data-label="Precio">$25.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$29.00</td>
+                                        <td data-label="icon"><button>🗑️</button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Codigo">009</td>
+                                        <td data-label="Nombre">Azucar Morena x 500 gr</td>
+                                        <td data-label="Precio">$25.00</td>
+                                        <td data-label="Iva">16%</td>
+                                        <td data-label="Precio + iva">$29.00</td>
+                                        <td data-label="icon"><button>🗑️</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </footer>
+                    </div>
+                </div>
