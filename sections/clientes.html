@@ -1,4 +1,4 @@
-                <section aria-labelledby="clientes-title">
+                <section class="main__productos-wrapper" aria-labelledby="clientes-title" aria-describedby="clientes-description">
 
                     <header class="main__header-all">
                         <div class="main__header-desc">
@@ -8,12 +8,52 @@
 
                         <div class="main__button-cont" aria-label="Acciones de clientes">
                             <button class="main__button-all" style="background-color: rgb(34, 167, 63);" type="button" aria-label="Registrar una venta">Venta</button>
-                            <button id="btn-cliente" class="main__button-all" type="button">Nuevo Cliente</button>
+                            <button id="btn-nuevo-cliente" class="main__button-all" type="button" aria-label="Crear un nuevo cliente">Nuevo cliente</button>
                         </div>
                     </header>
 
+                    <section id="cliente-form-wrapper" class="product__form-wrapper" aria-labelledby="cliente-form-titulo" hidden>
+                        <h3 id="cliente-form-titulo">Nuevo cliente</h3>
+
+                        <form id="cliente-form" class="product__form" novalidate>
+                            <input id="cliente-id" name="id" type="hidden">
+
+                            <div class="product__field">
+                                <label for="cliente-cedula">Cedula</label>
+                                <input id="cliente-cedula" name="cedula" type="text" placeholder="Ej: 1234567890" inputmode="numeric" autocomplete="off" required>
+                            </div>
+
+                            <div class="product__field">
+                                <label for="cliente-nombre">Nombre</label>
+                                <input id="cliente-nombre" name="nombre" type="text" placeholder="Nombre del cliente" autocomplete="name" required>
+                            </div>
+
+                            <div class="product__field">
+                                <label for="cliente-telefono">Telefono</label>
+                                <input id="cliente-telefono" name="telefono" type="tel" placeholder="Ej: 3001234567" autocomplete="tel">
+                            </div>
+
+                            <div class="product__field">
+                                <label for="cliente-correo">Correo</label>
+                                <input id="cliente-correo" name="correo" type="email" placeholder="cliente@example.com" autocomplete="email">
+                            </div>
+
+                            <div class="product__field">
+                                <label for="cliente-direccion">Direccion</label>
+                                <input id="cliente-direccion" name="direccion" type="text" placeholder="Direccion del cliente" autocomplete="street-address">
+                            </div>
+
+                            <div class="product__form-actions">
+                                <button id="btn-guardar-cliente" class="main__button-all" type="submit">Guardar cliente</button>
+                                <button id="btn-cancelar-cliente" class="product__button-secondary" type="button">Cancelar</button>
+                            </div>
+                        </form>
+                    </section>
+
+                    <p id="cliente-form-mensaje" class="product__message" role="status" aria-live="polite"></p>
+
                     <div class="footer__table-cont">
-                        <table id="tbodyClientes" class="footer__table" aria-describedby="clientes-description">
+                        <table id="tabla-clientes" class="footer__table" aria-describedby="clientes-description">
                             <caption style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;">
                                 Listado de clientes con opciones para editar o borrar registros.
                             </caption>
@@ -21,9 +61,9 @@
                                 <tr>
                                     <th scope="col">Cedula</th>
                                     <th scope="col">Nombre</th>
-                                    <th scope="col">Teléfono</th>
+                                    <th scope="col">Telefono</th>
                                     <th scope="col">Correo</th>
-                                    <th scope="col">Dirección</th>
+                                    <th scope="col">Direccion</th>
                                     <th scope="col">Editar</th>
                                     <th scope="col">Borrar</th>
                                 </tr>
