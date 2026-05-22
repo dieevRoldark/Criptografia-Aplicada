@@ -74,8 +74,8 @@ export function init() {
 
             window.location.hash = 'inicio'
             mostrarNotificacionCriptografica({
-                titulo: 'Flujo criptografico del login',
-                descripcion: 'La contrasena se valida con SHA-256; AES cifra los datos y RSA protege la clave AES.',
+                titulo: 'Resultado de la autenticacion',
+//                descripcion: 'La contrasena se valida con SHA-256; AES cifra los datos y RSA protege la clave AES.',
                 campos: [
                     { etiqueta: 'Correo', valor: evidencia.email },
                     { etiqueta: 'Correo cifrado', valor: evidencia.emailCifrado },

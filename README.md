@@ -1,4 +1,4 @@
-# D&D Market (Desarrollo Desktop First)
+# Demo de Criptrografía - Demo-Market
 
 <p>
 D&D Market es una demo de gestion contable para pequenas y medianas empresas. El objetivo del proyecto es centralizar operaciones como ventas, productos, clientes, proveedores, facturacion, control de stock y reportes desde una aplicacion web construida con JavaScript modular.
@@ -7,12 +7,9 @@ El desarrollo de D&D Market nace de las necesidades de pequeñas y medianas empr
 
 </p>
 
-- Gestión de ventas, productos, clientes y proveedores.
-- Generación de facturación post y electrónica.
-- Generación de reportes.
+- Gestión de productos.
 - Control de stock.
 - Alertas personalizadas.
-- Compatibilidad con los servicios de la Dian.
 
 ## Requerimientos del producto
 
