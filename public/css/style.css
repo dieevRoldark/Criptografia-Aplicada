@@ -1313,7 +1313,7 @@ botones del header de los navaside links  */
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 18px;
 }
 .perfil__section-content {
     display: flex;
@@ -1346,6 +1346,7 @@ botones del header de los navaside links  */
             border: 1px solid var(--primary);
             border-radius: 0.5rem;
             box-shadow: var(--shadow);
+            cursor: pointer;
         }
     }
 }
@@ -1403,6 +1404,16 @@ la información personal e infomación de negocio*/
         padding: 20px;
         border-bottom: 1px solid var(--border);
     }
+
+    .form__input {
+        width: 100%;
+        min-height: 36px;
+        border: 1px solid var(--border);
+        border-radius: 0.35rem;
+        background-color: var(--input-bg);
+        color: var(--text-primary);
+        padding: 7px 9px;
+    }
 }
 
 .form__perfil {
@@ -1410,6 +1421,21 @@ la información personal e infomación de negocio*/
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
+
+    .perfil__button{
+        display: flex;
+        gap: 8px;
+
+        button {
+            background-color: var(--primary);
+            color: #fff;
+            padding: 4px 8px;
+            border: 1px solid var(--primary);
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+        }
+    }
 }
 
 @media (max-width: 900px) {

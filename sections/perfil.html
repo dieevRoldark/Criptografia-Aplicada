@@ -1,11 +1,13 @@
                 <div class="perfil__container-wrapper">
-                    <div class="perfil__section-wrapper">
-                        <section class="perfil__section" aria-labelledby="perfil-heading">
+
+                    <section class="perfil__section" aria-labelledby="perfil-heading">
+
                             <div class="perfil__section-content">
                                 <div class="perfil__content">
                                     <div class="perfil">                                        
                                         <div class="perfil-foto">
-                                            <img loading="lazy" src="public/img/profile-img.jpg" alt="Foto de perfil">
+                                            <img id="perfil-foto-img" loading="lazy" src="public/img/profile-img.jpg" alt="Foto de perfil">
+                                            <input id="perfil-foto-input" type="file" accept="image/*" hidden>
                                         </div>
                                         <div class="perfil-description">
                                            <h3>Mercados Doris</h3>
@@ -20,25 +22,26 @@
                             </div>
                             <div class="perfil__info-card">
                                 <h3 id="perfil-heading">Información Personal</h3>
-                                <form class="form__perfil">
+                                <span id="perfil-mensaje" class="form__message" role="alert"></span>
+                                <form id="form-info-personal" class="form__perfil">
                                     <div>
                                         <label for="nombre">Nombre</label>
-                                        <input id="nombre" name="nombre" type="text" placeholder="Jhon Smith" autocomplete="name">
+                                        <input class="form__input" id="nombre" name="nombre" type="text" placeholder="Jhon Smith" autocomplete="name" required>
                                     </div>
                                     <div>
                                         <label for="telefono">Teléfono</label>
-                                        <input id="telefono" name="telefono" type="tel" placeholder="312 6234762" autocomplete="tel">
+                                        <input class="form__input" id="telefono" name="telefono" type="tel" placeholder="312 6234762" autocomplete="tel" required>
                                     </div>
                                     <div>
                                         <label for="email">Correo</label>
-                                        <input id="email" name="email" type="email" placeholder="Example@correo.com" autocomplete="email">
+                                        <input class="form__input" id="email" name="email" type="email" placeholder="Example@correo.com" autocomplete="email" required>
                                     </div>
                                     
                                     <div>
                                         <label for="direccion">Dirección</label>
-                                        <input id="direccion" name="direccion" type="text" placeholder="Cll 2 # 1-2" autocomplete="street-address">
+                                        <input class="form__input" id="direccion" name="direccion" type="text" placeholder="Cll 2 # 1-2" autocomplete="street-address" required>
                                     </div>
-                                    <div>
+                                    <div class="perfil__button">
                                         <button type="submit">Guardar Cambios</button>
                                     </div>
                                 </form>
@@ -46,29 +49,28 @@
 
                             <div class="perfil__info-card" >
                                 <h3>Información del negocio</h3>
-                                <form class="form__perfil">
+                                <form id="form-info-negocio" class="form__perfil">
                                     <div>
                                         <label for="nombre-negocio">Nombre del Negocio</label>
-                                        <input id="nombre-negocio" name="nombre-negocio" type="text" placeholder="Mercados Doris" autocomplete="organization">
+                                        <input class="form__input" id="nombre-negocio" name="nombre-negocio" type="text" placeholder="Mercados Doris" autocomplete="organization" required>
                                     </div>
                                     <div>
                                         <label for="tipo-negocio">Tipo de Negocio</label>
-                                        <input id="tipo-negocio" name="tipo-negocio" type="text" placeholder="Mini mercado">
+                                        <input class="form__input" id="tipo-negocio" name="tipo-negocio" type="text" placeholder="Mini mercado" required>
                                     </div>
                                     <div>
                                         <label for="ubicacion-negocio">Ubicación del Negocio</label>
-                                        <input id="ubicacion-negocio" name="ubicacion-negocio" type="text" placeholder="Calle colombia 20-19" autocomplete="street-address">
+                                        <input class="form__input" id="ubicacion-negocio" name="ubicacion-negocio" type="text" placeholder="Calle colombia 20-19" autocomplete="street-address" required>
                                     </div>
                                     <div>
                                         <label for="fecha-creacion">Fecha de registro</label>
-                                        <input id="fecha-creacion" name="fecha-creacion" type="date">
+                                        <input class="form__input" id="fecha-creacion" name="fecha-creacion" type="date" required>
                                     </div>
-                                    <div>
-                                        <button type="submit">Guardar Cambios</button>
+                                    <div class="perfil__button">
+                                        <button type="submit" >Guardar Cambios</button>
                                     </div>
                                 </form>
                             </div>
-                        </section>
-
-                    </div>  
+                    </section>
+                     
                 </div>
