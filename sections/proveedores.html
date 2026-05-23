@@ -1,33 +1,75 @@
-                <main aria-labelledby="proveedores-heading">
+                <section class="main__productos-wrapper" aria-labelledby="proveedores-title" aria-describedby="proveedores-description">
+
                     <header class="main__header-all">
                         <div class="main__header-desc">
-                            <h2 id="proveedores-heading">Proveedores</h2>
-                            <p>Puedes gestionar tus proveedores desde el siguiente panel.</p>
+                            <h2 id="proveedores-title">Proveedores</h2>
+                            <p id="proveedores-description">Puedes gestionar tus proveedores desde el siguiente panel.</p>
                         </div>
 
-                        <div class="main__button-cont">                           
-                            <button id="btn-Proveedores" class="main__button-all" type="button" aria-label="Crear nuevo proveedor">Nuevo proveedor</button>
+                        <div class="main__button-cont" aria-label="Acciones de proveedores">
+                            <button id="btn-nuevo-proveedor" class="main__button-all" type="button" aria-label="Crear un nuevo proveedor">Nuevo proveedor</button>
                         </div>
                     </header>
 
-                    <section aria-label="Listado de proveedores">
-                        <div class="footer__table-cont">
-                            <table id="tbodyProveedores" class="footer__table" aria-label="Tabla de proveedores registrados">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Nit</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Dirección</th>
-                                        <th scope="col">Teléfono</th>
-                                        <th scope="col">Email</th>
-                                        <th scope="col">Editar</th>
-                                        <th scope="col">Borrar</th>
-                                    </tr>
-                                </thead>
-                                <tbody aria-live="polite">
+                    <section id="proveedor-form-wrapper" class="product__form-wrapper" aria-labelledby="proveedor-form-titulo" hidden>
+                        <h3 id="proveedor-form-titulo">Nuevo proveedor</h3>
 
-                                </tbody>
-                            </table>
-                        </div>
+                        <form id="proveedor-form" class="product__form" novalidate>
+                            <input id="proveedor-id" name="id" type="hidden">
+
+                            <div class="product__field">
+                                <label for="proveedor-nit">Nit</label>
+                                <input id="proveedor-nit" name="nit" type="text" placeholder="Ej: 123456789-0" inputmode="numeric" autocomplete="off" required>
+                            </div>
+
+                            <div class="product__field">
+                                <label for="proveedor-nombre">Nombre</label>
+                                <input id="proveedor-nombre" name="nombre" type="text" placeholder="Nombre del proveedor" autocomplete="name" required>
+                            </div>
+
+                            <div class="product__field">
+                                <label for="proveedor-telefono">Telefono</label>
+                                <input id="proveedor-telefono" name="telefono" type="tel" placeholder="Ej: 3001234567" autocomplete="tel">
+                            </div>
+
+                            <div class="product__field">
+                                <label for="proveedor-correo">Correo</label>
+                                <input id="proveedor-correo" name="correo" type="email" placeholder="proveedor@example.com" autocomplete="email">
+                            </div>
+
+                            <div class="product__field">
+                                <label for="proveedor-direccion">Direccion</label>
+                                <input id="proveedor-direccion" name="direccion" type="text" placeholder="Direccion del proveedor" autocomplete="street-address">
+                            </div>
+
+                            <div class="product__form-actions">
+                                <button id="btn-guardar-proveedor" class="main__button-all" type="submit">Guardar proveedor</button>
+                                <button id="btn-cancelar-proveedor" class="product__button-secondary" type="button">Cancelar</button>
+                            </div>
+                        </form>
                     </section>
-                </main>
+
+                    <p id="proveedor-form-mensaje" class="product__message" role="status" aria-live="polite"></p>
+
+                    <div class="footer__table-cont">
+                        <table id="tabla-proveedores" class="footer__table" aria-describedby="proveedores-description">
+                            <caption style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; border: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;">
+                                Listado de proveedores con opciones para editar o borrar registros.
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nit</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Telefono</th>
+                                    <th scope="col">Correo</th>
+                                    <th scope="col">Direccion</th>
+                                    <th scope="col">Editar</th>
+                                    <th scope="col">Borrar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
